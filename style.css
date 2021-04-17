@@ -12,7 +12,14 @@ body {
   line-height: 22px;
   color: #555555;
   background-image: url(img/imagen-productos.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (max-width: 799px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 .bold {
@@ -27,7 +34,7 @@ body {
 }
 
 .resume {
-  width: 800px;
+  width: 90%;
   height: auto;
   display: flex;
   margin: 50px auto;
@@ -38,7 +45,7 @@ body {
 }
 .resume .resume_left .resume_profile {
   width: 85%;
-  height: 260px;
+  height: 270px;
   padding: 20px;
   margin: auto;
 }
@@ -49,8 +56,27 @@ body {
   border: 1px #592563 solid;
   box-shadow: 0 10px 6px -6px #555555;
 }
+@media (max-width: 799px) {
+  .resume .resume_left .resume_profile {
+    width: 50%;
+    height: 260px;
+  }
+}
 .resume .resume_left .resume_content {
   padding: 0 25px;
+}
+@media (max-width: 799px) {
+  .resume .resume_left .resume_content .resume_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+}
+@media (max-width: 799px) {
+  .resume .resume_left .resume_content .resume_social .bold_social {
+    padding-left: 20px;
+  }
 }
 .resume .resume_left .bold {
   color: #fff;
@@ -105,6 +131,13 @@ body {
 }
 .resume .resume_left .resume_skills ul li .skill_per {
   width: 15%;
+}
+@media (max-width: 799px) {
+  .resume .resume_left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .resume .resume_social .semi-bold {
   color: #fff;
@@ -183,6 +216,12 @@ body {
   position: relative;
   color: #a08cd7;
 }
+@media (max-width: 799px) {
+  .resume .resume_right .resume_hobby ul li {
+    width: 50px;
+    height: 50px;
+  }
+}
 .resume .resume_right .resume_hobby ul li i {
   font-size: 30px;
 }
@@ -195,11 +234,36 @@ body {
   height: 2px;
   background: #a08cd7;
 }
+@media (max-width: 799px) {
+  .resume .resume_right .resume_hobby ul li:before {
+    top: 25px;
+    width: 40px;
+  }
+}
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
+@media (max-width: 799px) {
+  .resume .resume_right {
+    width: 100%;
+  }
+}
 .resume a {
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  .resume {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 799px) {
+  .resume .resume_social {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
