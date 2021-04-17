@@ -37,6 +37,7 @@ body {
   width: 90%;
   height: auto;
   display: flex;
+  justify-content: center;
   margin: 50px auto;
 }
 .resume .resume_left {
