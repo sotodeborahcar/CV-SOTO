@@ -43,11 +43,11 @@ body {
 }
 
 .resume {
-  width: 90%;
+  // width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
-  margin: 25px auto;
+  // margin: 25px auto;
 
   & .resume_left {
     width: 350px;
@@ -79,6 +79,9 @@ body {
         border-radius: 0;
         width: 80%;
         height: 80%;
+        @media (max-width: 599px) {
+          height: 70%;
+        }
       }
     }
     & .resume_content {
@@ -145,7 +148,8 @@ body {
       align-items: center;
       & .skill_name {
         width: 25%;
-        font-weight: bolder;
+        font-weight: 500;
+        color: $color-right;
       }
 
       & .skill_progress {
@@ -267,6 +271,7 @@ body {
     & .resume_hobby ul {
       display: flex;
       justify-content: space-around;
+      padding: 0;
       & li {
         width: 80px;
         height: 80px;
