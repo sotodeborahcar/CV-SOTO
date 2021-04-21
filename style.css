@@ -43,7 +43,7 @@ body {
 }
 .resume .resume_left {
   width: 350px;
-  background: linear-gradient(270deg, rgba(171, 155, 220, 0.961), rgba(80, 174, 232, 0.94));
+  background: linear-gradient(270deg, rgba(164, 145, 220, 0.961), rgba(124, 192, 235, 0.94));
 }
 .resume .resume_left .resume_profile {
   width: 80%;
@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 899px) {
+@media (max-width: 799px) {
   .resume .resume_left .resume_profile {
     width: 40%;
     height: 250px;
@@ -96,7 +96,7 @@ body {
 }
 @media (max-width: 799px) {
   .resume .resume_left .resume_content .resume_social .bold_social {
-    padding-left: 20px;
+    padding: 15px;
   }
 }
 @media (max-width: 599px) {
@@ -110,6 +110,22 @@ body {
 }
 .resume .resume_left .bold {
   color: #fff;
+}
+@media (max-width: 799px) {
+  .resume .resume_left .bold_name {
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+    padding-bottom: 36px;
+    line-height: 30px;
+    color: rgba(164, 145, 220, 0.961), rgba(124, 192, 235, 0.94);
+  }
+}
+@media (max-width: 799px) {
+  .resume .resume_left .semi-parrafo {
+    text-align: center;
+    color: #020437;
+  }
 }
 .resume .resume_left .regular, .resume .resume_left .idioma {
   color: #020437;
@@ -141,6 +157,11 @@ body {
 .resume .resume_left ul li .data {
   color: #020437;
   font-weight: 400;
+}
+@media (max-width: 799px) {
+  .resume .resume_left ul li .data {
+    font-size: small;
+  }
 }
 .resume .resume_left .resume_skills ul li {
   display: flex;
@@ -178,14 +199,19 @@ body {
     flex-direction: column;
   }
 }
+@media (min-width: 800px) {
+  .resume .resume_left .title {
+    display: none;
+  }
+}
 .resume .resume_social .semi-bold,
 .resume .parrafo {
   color: #fff;
   margin-bottom: 3px;
 }
-@media (max-width: 599px) {
-  .resume .title {
-    margin-right: 20px;
+@media (max-width: 799px) {
+  .resume .hidden {
+    display: none;
   }
 }
 .resume .resume_item {
@@ -217,9 +243,19 @@ body {
   padding-bottom: 36px;
   line-height: 30px;
 }
+@media (max-width: 799px) {
+  .resume .resume_right .bold_name {
+    display: none;
+  }
+}
 .resume .resume_right .bold_carr {
   color: #171616;
   text-align: center;
+}
+@media (max-width: 799px) {
+  .resume .resume_right .bold_carr {
+    display: none;
+  }
 }
 .resume .resume_right .resume_work ul, .resume .resume_right .resume_education ul {
   padding-left: 40px;
