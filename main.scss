@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
-$color-principal: #511c8e;
-$color-left: rgb(147, 203, 233), rgba(127, 106, 196, 0.94);
-$color-secundario: #040650;
+$color-principal: #5c0fb5;
+$color-left: rgba(171, 155, 220, 0.961), rgba(80, 174, 232, 0.94);
+$color-secundario: #020437;
 $color-right: #fff;
 $color-texto: #171616;
 $padding: 0 25px;
@@ -117,6 +117,11 @@ body {
       color: $color-secundario;
       font-weight: 600;
     }
+    & ul {
+      @media (max-width: 599px) {
+        padding: 0;
+      }
+    }
     & ul li {
       display: flex;
       margin-bottom: 10px;
@@ -182,7 +187,6 @@ body {
     margin-bottom: 3px;
   }
   & .title {
-    margin-bottom: 20px;
     @media (max-width: 599px) {
       margin-right: 20px;
     }
@@ -242,6 +246,9 @@ body {
       & .semi_work {
         margin-bottom: 12px;
         margin-left: 40px;
+        @media (max-width: 599px) {
+          margin-left: 0;
+        }
         & i {
           padding-right: 14px;
         }
